@@ -50,6 +50,8 @@ object=json.loads(res.text)
 if object['code']==200:
     print("登录成功！")
 else:
+    
+    print("------------"+str(logindata))
     print("登录失败！请检查密码是否正确！"+str(object['code']))
     exit(object['code'])
 
