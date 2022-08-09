@@ -51,8 +51,8 @@ if object['code']==200:
     print("登录成功！")
 else:
     
-    print(logindata)
-    print("登录失败！请检查密码是否正确！"+str(object['code']))
+    print("登录失败！请检查密码是否正确11！"+str(json.dumps(logindata)))
+    print("登录失败！请检查密码是否正确11！"+str(object['code']))
     exit(object['code'])
 
 res=s.post(url=url2,data=protect('{"type":0}'),headers=headers)
